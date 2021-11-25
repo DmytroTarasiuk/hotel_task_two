@@ -61,6 +61,10 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+}
+.user-logged:hover {
+  background-color: var(--color-grey-light-2);
 }
 
 .header .user-logged img {
@@ -656,5 +660,72 @@ form .submit-btn:active {
   .hotel-header.about {
       height: 10vh;
       flex-direction: row;
+  }
+}
+
+
+.rooms {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.room {
+  width: 300px;
+  padding-bottom: 2rem;
+  background-color: var(--color-grey-light-2);
+  margin: 1.5rem 3rem;
+  box-shadow: var(--shadow-dark);
+  border-radius: 10px;
+  
+}
+
+.room img {
+  width: 100%;
+  height: 200px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.room h2 {
+  text-align: center;
+  color: var(--color-grey-dark-2);
+}
+
+.room small {
+  color:var(--color-grey-dark-3)
+}
+
+.price {
+  font-size: 1.2rem;
+  color: var(--color-primary-dark)
+}
+
+.room-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.room-btn {
+  text-decoration: none;
+  margin: 3rem 0 0 30%;
+  color: var(--color-grey-light-1);
+  background: linear-gradient(to left, var(--color-primary-dark), var(--color-primary-light) 40%, var(--color-primary));
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+}
+
+
+@media (max-width: 550px) {
+  .room-info {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .price {
+    margin: 0.5rem 0;
   }
 }

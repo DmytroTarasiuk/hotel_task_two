@@ -1,21 +1,20 @@
 import Header from "../components/Header"
 
-import ContentAboutPage from "../components/ContentAboutPage"
+import ContentRoomsPage from "../components/ContentRoomsPage"
 import Navbar from "../components/Navbar"
 
 
-const AboutScreen = () => {
+const ContactScreen = () => {
     
     return (
         <div className="container">
             <Header />
             <div className="main">
                 <Navbar />
-                <ContentAboutPage />
+                <ContentRoomsPage />
             </div>
         </div>
     )
 }
 
-export default AboutScreen
-
+export default ContactScreen

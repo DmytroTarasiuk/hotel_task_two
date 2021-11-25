@@ -1,6 +1,7 @@
 import Header from "../components/Header"
-import NavbarTwo from "../components/NavbarTwo"
+
 import ContentContactPage from "../components/ContetContactPage"
+import Navbar from "../components/Navbar"
 
 
 const ContactScreen = () => {
@@ -9,7 +10,7 @@ const ContactScreen = () => {
         <div className="container">
             <Header />
             <div className="main">
-                <NavbarTwo />
+                <Navbar />
                 <ContentContactPage />
             </div>
         </div>
