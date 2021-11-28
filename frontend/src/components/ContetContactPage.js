@@ -1,3 +1,4 @@
+import React from "react"
 import Form from "./Form"
 import ImagesHeader from "./ImagesHeader"
 
@@ -18,7 +19,7 @@ const ContentContactPage = () => {
 
                 <div className="main-content about">
                     <div className="content-container">
-                        <Form />
+                        <Form  />
                     </div>
                 </div>
 

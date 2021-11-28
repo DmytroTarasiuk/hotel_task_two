@@ -446,7 +446,7 @@ form .submit-btn:active {
       padding: 2% 1%;
   }
   input, textarea {
-      width: 40%;
+      width: 80%;
   }
   .header {
       height: 10vh;
@@ -728,4 +728,15 @@ form .submit-btn:active {
   .price {
     margin: 0.5rem 0;
   }
+}
+
+
+.close-button {
+  font: inherit;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #8a2b06;
+  padding: 0.5rem 2rem;
+  border-radius: 25px;
+  margin-left: 1rem;
 }
