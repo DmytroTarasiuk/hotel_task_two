@@ -4,7 +4,7 @@ const Room = ({ room }) => {
 
     return (
         <div className="room">
-            <a href={`/room/${room._id}`}>
+            <a href={`/rooms/${room._id}`}>
                 <img src={room.image} alt='room'/>
             </a>
             <h2>{room.title}</h2>
@@ -12,7 +12,7 @@ const Room = ({ room }) => {
                 <small>Size: {room.size}</small>
                 <small>Price: <span className="price">{room.price} {room.currency}</span></small>
             </div>
-            <a className="room-btn" href={`/room/${room._id}`}>Find More</a>
+            <a className="room-btn" href={`/rooms/${room._id}`}>Find More</a>
         </div>
     )
 }
