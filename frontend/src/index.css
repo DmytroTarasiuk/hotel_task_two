@@ -132,9 +132,17 @@ textarea:focus {
   padding: 1rem 0;
   display: block;
   width: 100%;
+  transition: background-color 1s ease-in-out;
 }
 
 .navbar-links li.active {
+  background-color: var(--color-primary);
+}
+
+
+
+
+.navbar-links li:hover {
   background-color: var(--color-primary);
 }
 
