@@ -28,6 +28,6 @@ npm install
 # Run frontend (:3000) 
 cd frontend
 npm start
-
+```
 
 Developed by Dmytro Tarasiuk for Patronage Intive.
