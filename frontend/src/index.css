@@ -188,6 +188,11 @@ textarea:focus {
   cursor: pointer;
   margin-left: 2.5rem;
 }
+.header-search {
+  font-size: 0.8rem;
+  color: var(--color-primary-light);
+  margin-left: 2rem;
+}
 
 .hotel-name {
   color: var(--color-grey-dark-3);
@@ -647,6 +652,7 @@ form .submit-btn:active {
       width: 100%;
       height: 10vh;
       padding: 0;
+     
   }
   .navbar.about {
       height: 8vh;
@@ -663,13 +669,12 @@ form .submit-btn:active {
   }
 }
 
+/*Rooms section*/
 
-.rooms {
-  width: 100%;
-  margin: 0;
-  padding: 0;
+.content-container.rooms {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .room {
@@ -728,6 +733,20 @@ form .submit-btn:active {
   .price {
     margin: 0.5rem 0;
   }
+  .room {
+    width: 100%;
+    padding-bottom: 2rem;
+    background-color: var(--color-grey-light-2);
+    margin: 1rem 0;
+    box-shadow: var(--shadow-dark);
+    border-radius: 10px;
+    
+  }
+  .header-search {
+    width: 50%;
+    margin-left: -1.5rem;
+  }
+  
 }
 
 
@@ -735,8 +754,62 @@ form .submit-btn:active {
   font: inherit;
   cursor: pointer;
   background-color: transparent;
-  border: 1px solid #8a2b06;
+  border: 1px solid var(--color-primary-dark);
   padding: 0.5rem 2rem;
   border-radius: 25px;
   margin-left: 1rem;
+}
+
+
+/*Rooom Details section*/
+
+.room-details {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.room-details img {
+  width: 30vw;
+  height: 250px;
+  margin-top: 1.5rem;
+  margin-right: 2.5rem;
+}
+/*
+.room-details a {
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-decoration: none;
+  background: linear-gradient(to left, var(--color-primary-dark), var(--color-primary-light) 40%, var(--color-primary));
+  color: var(--color-grey-light-4);
+  padding: 0.5rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow-light);
+}
+*/
+.room-details span {
+  margin: 2.5rem 0;
+}
+
+@media (max-width: 800px) {
+  
+  .header-search {
+    width: 50%;
+    margin-left: 1rem;
+  }
+  .room-details {
+    flex-direction: column;
+  }
+  .room-details img {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .header-search {
+    width: 50%;
+    margin-left: -2.5rem;
+  }
 }

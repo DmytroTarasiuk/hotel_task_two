@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react"
+import React, { useState } from "react"
 import ImagesHeader from "./ImagesHeader"
 
 
@@ -9,8 +9,6 @@ const ContentRoomsPage = () => {
 
     const [searchTerm, setSearchTerm] = useState('')
 
-    const iframeRef = useRef();
-    console.log(iframeRef.current)
 
     const roomsEl = document.querySelectorAll('.room')
         
@@ -26,18 +24,15 @@ const ContentRoomsPage = () => {
                         <span>Our rooms</span>
                     </div>
                     
-                    <input className="header-link" type='text' placeholder="Search rooms"  onChange={(e) => {
+                    <input className="header-search" type='text' placeholder="Search rooms"  onChange={(e) => {
                         setSearchTerm(e.target.value)
                     }}/>
                    
-                   
-                    
-                    
                 </div>
 
                 <div className="main-content about">
-                    <div className="content-container">
-                        <div className="rooms">
+                    <div className="content-container rooms">
+                        
                         
                         {rooms.filter((room) => {
                             if(searchTerm === '') {
@@ -48,10 +43,10 @@ const ContentRoomsPage = () => {
                         }).map(room => (
                         <Room room={room} key={room._id} />
                         ))}
-                        {roomsEl.length === 0 && <p>Nothing was found</p>}
+                        {roomsEl.length === 0 && searchTerm !== '' && <p>Nothing was found</p>}
                         
                         
-                        </div>
+                        
                     </div>
                 </div>
         </div>

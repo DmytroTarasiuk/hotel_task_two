@@ -12,7 +12,9 @@ const rooms = [
         price: "80",
         currency: "usd",
         image: room1,
-        size: "11m"
+        size: "11m",
+        rating: 5,
+        numReviews: 10
     },
     {
         _id: "0002",
@@ -20,7 +22,9 @@ const rooms = [
         price: "100",
         currency: "usd",
         image: room2,
-        size: "16m"
+        size: "16m",
+        rating: 4.5,
+        numReviews: 12
     },
     {
         _id: "0003",
@@ -28,7 +32,9 @@ const rooms = [
         price: "120",
         currency: "usd",
         image: room3,
-        size: "20m"
+        size: "20m",
+        rating: 4,
+        numReviews: 6
     },
     {
         _id: "0004",
@@ -36,7 +42,9 @@ const rooms = [
         price: "140",
         currency: "usd",
         image: room4,
-        size: "28m"
+        size: "28m",
+        rating: 3.5,
+        numReviews: 131
     },
     {
         _id: "0005",
@@ -44,7 +52,9 @@ const rooms = [
         price: "160",
         currency: "usd",
         image: room5,
-        size: "28m"
+        size: "28m",
+        rating: 3.0,
+        numReviews: 1012
     },
     {
         _id: "0006",
@@ -52,7 +62,9 @@ const rooms = [
         price: "200",
         currency: "usd",
         image: room6,
-        size: "45m"
+        size: "45m",
+        rating: 2.5,
+        numReviews: 3
     }
 ]
 
