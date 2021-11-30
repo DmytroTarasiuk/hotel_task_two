@@ -1,18 +1,19 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Room = ({ room }) => {
 
     return (
         <div className="room">
-            <a href={`/rooms/${room._id}`}>
+            <Link to={`/rooms/${room._id}`}>
                 <img src={room.image} alt='room'/>
-            </a>
+            </Link>
             <h2>{room.title}</h2>
             <div className="room-info">
                 <small>Size: {room.size}</small>
                 <small>Price: <span className="price">{room.price} {room.currency}</span></small>
             </div>
-            <a className="room-btn" href={`/rooms/${room._id}`}>Find More</a>
+            <Link className="room-btn" to={`/rooms/${room._id}`}>Find More</Link>
         </div>
     )
 }

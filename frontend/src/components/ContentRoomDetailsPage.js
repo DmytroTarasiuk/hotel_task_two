@@ -1,7 +1,7 @@
 import React from "react"
 import ImagesHeader from "./ImagesHeader"
 import Rating from "./Rating"
-
+import { Link } from "react-router-dom"
 
 import BookButton from './BookButton'
 
@@ -15,7 +15,7 @@ const ContentRoomDetailsPage = (props) => {
                 <div className="hotel-header about">
                     <div className="hotel-name">
                         <span>{props.title}</span>
-                        <a className="header-link" href='/rooms'>Go back</a>
+                        <Link className="header-link" to='/rooms'>Go back</Link>
                     </div>
                    
                 </div>

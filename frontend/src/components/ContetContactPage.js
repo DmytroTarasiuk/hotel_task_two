@@ -1,7 +1,7 @@
 import React from "react"
 import Form from "./Form"
 import ImagesHeader from "./ImagesHeader"
-
+import { NavLink } from "react-router-dom"
 
 const ContentContactPage = () => {
 
@@ -14,7 +14,7 @@ const ContentContactPage = () => {
                         <span>contact us</span>
                     </div>
                     
-                    <a className="header-link" href='/'>Hotel</a>
+                    <NavLink className="header-link" to='/'>Hotel</NavLink>
                 </div>
 
                 <div className="main-content about">

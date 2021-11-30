@@ -1,5 +1,5 @@
 import ImagesHeader from "./ImagesHeader"
-
+import { NavLink } from "react-router-dom"
 
 const ContentAboutPage = () => {
     return (
@@ -12,7 +12,7 @@ const ContentAboutPage = () => {
                         <span>About us</span>
                     </div>
                     
-                    <a className="header-link" href='/contact'>Contact us</a>
+                    <NavLink className="header-link" to='/contact'>Contact us</NavLink>
                 </div>
 
                 <div className="main-content about">

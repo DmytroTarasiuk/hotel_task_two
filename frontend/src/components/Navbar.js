@@ -1,6 +1,6 @@
 import React from 'react'
 
-
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -9,10 +9,10 @@ const Navbar = () => {
     return (
         <div className="navbar">
                 <ul className="navbar-links">
-                    <li className={pathname === '/about' ? 'active' : null}><a className='link' href="/about">About Us</a></li>
-                    <li className={pathname === '/' ? 'active' : null}><a className='link' href="/">Hotel</a></li>
-                    <li className={pathname === '/contact'? 'active' : null}><a className='link' href="/contact">Contact us</a></li>
-                    <li className={pathname === '/rooms' ? 'active' : null}><a className='link' href="/rooms">Rooms</a></li>
+                    <li className={pathname === '/about' ? 'active' : null}><NavLink className='link' to='/about'>About Us</NavLink></li>
+                    <li className={pathname === '/' ? 'active' : null}><NavLink className='link' to="/">Hotel</NavLink></li>
+                    <li className={pathname === '/contact'? 'active' : null}><NavLink className='link' to="/contact">Contact us</NavLink></li>
+                    <li className={pathname === '/rooms' ? 'active' : null}><NavLink className='link' to="/rooms">Rooms</NavLink></li>
                 </ul>
                 <div className="footer">
                     <small>&copy;2021 All rights reserved.</small>
